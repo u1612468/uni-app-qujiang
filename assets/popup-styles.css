@@ -1,0 +1,44 @@
+/* 图片展示区域 */
+.images-section {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.images-section p b {
+  min-width: auto;
+  display: inline;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.image-container:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);
+}
+
+.popup-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.popup-image:hover {
+  transform: scale(1.05);
+}
