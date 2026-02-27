@@ -15,7 +15,7 @@ const UNI_COMPONENTS = [
 ]
 
 export default defineConfig({
-  base: './',
+  base: '/uni-app-qujiang/',
   plugins: [
     uni({
       vueOptions: {
